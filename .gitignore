@@ -331,3 +331,6 @@ downloads/
 # Include small sample/config files if needed
 # !config.json
 # !sample_data.csv
+
+# Allow JSON files inside SBERT_semantic_drift (calibration/config files, not datasets)
+!SBERT_semantic_drift/*.json

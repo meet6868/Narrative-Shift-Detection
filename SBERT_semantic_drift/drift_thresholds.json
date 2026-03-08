@@ -1,0 +1,102 @@
+{
+  "Climate": {
+    "window_days": 5,
+    "models": {
+      "w1": {
+        "mean": 0.201103,
+        "std": 0.11965,
+        "threshold": 0.320753
+      },
+      "w3": {
+        "mean": 0.25954,
+        "std": 0.130478,
+        "threshold": 0.390018
+      },
+      "w5": {
+        "mean": 0.26173,
+        "std": 0.133611,
+        "threshold": 0.395342
+      }
+    }
+  },
+  "Economics": {
+    "window_days": 5,
+    "models": {
+      "w1": {
+        "mean": 0.18504,
+        "std": 0.092122,
+        "threshold": 0.277162
+      },
+      "w3": {
+        "mean": 0.2694,
+        "std": 0.110772,
+        "threshold": 0.380172
+      },
+      "w5": {
+        "mean": 0.290715,
+        "std": 0.128182,
+        "threshold": 0.418896
+      }
+    }
+  },
+  "Health": {
+    "window_days": 5,
+    "models": {
+      "w1": {
+        "mean": 0.163964,
+        "std": 0.092128,
+        "threshold": 0.256091
+      },
+      "w3": {
+        "mean": 0.269929,
+        "std": 0.118589,
+        "threshold": 0.388518
+      },
+      "w5": {
+        "mean": 0.307839,
+        "std": 0.130859,
+        "threshold": 0.438699
+      }
+    }
+  },
+  "Technology": {
+    "window_days": 5,
+    "models": {
+      "w1": {
+        "mean": 0.163899,
+        "std": 0.091357,
+        "threshold": 0.255256
+      },
+      "w3": {
+        "mean": 0.255919,
+        "std": 0.131964,
+        "threshold": 0.387883
+      },
+      "w5": {
+        "mean": 0.270446,
+        "std": 0.138158,
+        "threshold": 0.408604
+      }
+    }
+  },
+  "War": {
+    "window_days": 5,
+    "models": {
+      "w1": {
+        "mean": 0.199779,
+        "std": 0.118501,
+        "threshold": 0.318281
+      },
+      "w3": {
+        "mean": 0.273978,
+        "std": 0.152165,
+        "threshold": 0.426144
+      },
+      "w5": {
+        "mean": 0.309408,
+        "std": 0.170955,
+        "threshold": 0.480362
+      }
+    }
+  }
+}

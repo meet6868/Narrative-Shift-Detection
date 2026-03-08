@@ -1,0 +1,417 @@
+{
+  "topic": "War",
+  "n_articles": 10,
+  "window_days": 5,
+  "w1": {
+    "drift_threshold": 0.318281,
+    "n_windows": 4,
+    "n_drifts": 3,
+    "results": [
+      {
+        "window_previous": "2024-01-03",
+        "window_current": "2024-01-18",
+        "drift": 0.488787,
+        "drift_threshold": 0.318281,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Officials reported that drone surveillance systems were heavily used to track troop movements across the disputed region.",
+            "sim_score": 0.7041
+          },
+          {
+            "sentence": "Recent fighting intensified along the eastern border where military forces exchanged artillery fire overnight.",
+            "sim_score": 0.6952
+          },
+          {
+            "sentence": "Defense analysts say the conflict increasingly relies on advanced technology, including AI-assisted targeting software that can identify military vehicles from satellite images.",
+            "sim_score": 0.6675
+          },
+          {
+            "sentence": "Diplomatic officials have urged restraint, but negotiations remain stalled as both sides accuse each other of violating previous ceasefire agreements.",
+            "sim_score": 0.6031
+          },
+          {
+            "sentence": "Meanwhile, humanitarian groups warned that thousands of civilians are fleeing nearby towns due to continued shelling.",
+            "sim_score": 0.5763
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "At the same time, analysts note that geopolitical tensions and conflicts in energy-producing regions could further destabilize markets.",
+            "impact_score": 1.9561
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-18",
+        "window_current": "2024-01-23",
+        "drift": 0.702992,
+        "drift_threshold": 0.318281,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "At the same time, analysts note that geopolitical tensions and conflicts in energy-producing regions could further destabilize markets.",
+            "sim_score": 1.0
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Military officials announced that autonomous surveillance drones have been deployed along several contested borders.",
+            "impact_score": 6.7013
+          },
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "impact_score": 3.5235
+          },
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "impact_score": 3.4858
+          },
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "impact_score": 2.2324
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-23",
+        "window_current": "2024-02-27",
+        "drift": 0.651801,
+        "drift_threshold": 0.318281,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "sim_score": 0.793
+          },
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "sim_score": 0.7812
+          },
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "sim_score": 0.7717
+          },
+          {
+            "sentence": "Military officials announced that autonomous surveillance drones have been deployed along several contested borders.",
+            "sim_score": 0.6876
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Peace negotiations between rival nations resumed this week after months of escalating military tensions.",
+            "impact_score": 3.8834
+          },
+          {
+            "sentence": "Observers remain cautious but hopeful that diplomatic efforts may finally lead to a lasting resolution.",
+            "impact_score": 3.6762
+          },
+          {
+            "sentence": "Diplomats from several countries gathered to discuss a potential ceasefire agreement that could end the conflict.",
+            "impact_score": 3.5449
+          },
+          {
+            "sentence": "Humanitarian organizations have urged negotiators to prioritize civilian safety and ensure that aid can reach affected communities.",
+            "impact_score": 2.4837
+          },
+          {
+            "sentence": "Analysts say both sides are under pressure as the economic costs of the war continue to rise and international sanctions limit trade opportunities.",
+            "impact_score": 1.613
+          }
+        ]
+      }
+    ]
+  },
+  "w3": {
+    "drift_threshold": 0.426144,
+    "n_windows": 5,
+    "n_drifts": 4,
+    "results": [
+      {
+        "window_previous": "2024-01-03",
+        "window_current": "2024-01-18",
+        "drift": 0.572186,
+        "drift_threshold": 0.426144,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Officials reported that drone surveillance systems were heavily used to track troop movements across the disputed region.",
+            "sim_score": 0.8813
+          },
+          {
+            "sentence": "Meanwhile, humanitarian groups warned that thousands of civilians are fleeing nearby towns due to continued shelling.",
+            "sim_score": 0.8728
+          },
+          {
+            "sentence": "Defense analysts say the conflict increasingly relies on advanced technology, including AI-assisted targeting software that can identify military vehicles from satellite images.",
+            "sim_score": 0.8658
+          },
+          {
+            "sentence": "Economic analysts also noted that the escalation could disrupt energy trade routes passing through the region, potentially affecting oil prices globally.",
+            "sim_score": 0.8349
+          },
+          {
+            "sentence": "Recent fighting intensified along the eastern border where military forces exchanged artillery fire overnight.",
+            "sim_score": 0.8171
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Some economists suggest that investment in renewable energy and digital infrastructure may help stimulate growth while addressing climate and technological challenges simultaneously.",
+            "impact_score": 2.357
+          },
+          {
+            "sentence": "At the same time, analysts note that geopolitical tensions and conflicts in energy-producing regions could further destabilize markets.",
+            "impact_score": 2.3182
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-18",
+        "window_current": "2024-01-23",
+        "drift": 0.815588,
+        "drift_threshold": 0.426144,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "At the same time, analysts note that geopolitical tensions and conflicts in energy-producing regions could further destabilize markets.",
+            "sim_score": 0.9667
+          },
+          {
+            "sentence": "Some economists suggest that investment in renewable energy and digital infrastructure may help stimulate growth while addressing climate and technological challenges simultaneously.",
+            "sim_score": 0.9667
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "impact_score": 5.8719
+          },
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "impact_score": 5.6585
+          },
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "impact_score": 5.3387
+          },
+          {
+            "sentence": "The new systems rely on machine learning algorithms to detect unusual activity and transmit real-time intelligence to command centers.",
+            "impact_score": 4.8631
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-23",
+        "window_current": "2024-02-27",
+        "drift": 0.763118,
+        "drift_threshold": 0.426144,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "sim_score": 0.9638
+          },
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "sim_score": 0.9619
+          },
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "sim_score": 0.9309
+          },
+          {
+            "sentence": "The new systems rely on machine learning algorithms to detect unusual activity and transmit real-time intelligence to command centers.",
+            "sim_score": 0.8615
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Peace negotiations between rival nations resumed this week after months of escalating military tensions.",
+            "impact_score": 6.3944
+          },
+          {
+            "sentence": "Diplomats from several countries gathered to discuss a potential ceasefire agreement that could end the conflict.",
+            "impact_score": 5.3132
+          },
+          {
+            "sentence": "Observers remain cautious but hopeful that diplomatic efforts may finally lead to a lasting resolution.",
+            "impact_score": 4.546
+          },
+          {
+            "sentence": "Analysts say both sides are under pressure as the economic costs of the war continue to rise and international sanctions limit trade opportunities.",
+            "impact_score": 3.6582
+          },
+          {
+            "sentence": "Humanitarian organizations have urged negotiators to prioritize civilian safety and ensure that aid can reach affected communities.",
+            "impact_score": 2.8938
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-02-27",
+        "window_current": "2024-03-08",
+        "drift": 0.605521,
+        "drift_threshold": 0.426144,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Analysts say both sides are under pressure as the economic costs of the war continue to rise and international sanctions limit trade opportunities.",
+            "sim_score": 0.9326
+          },
+          {
+            "sentence": "Diplomats from several countries gathered to discuss a potential ceasefire agreement that could end the conflict.",
+            "sim_score": 0.9076
+          },
+          {
+            "sentence": "Humanitarian organizations have urged negotiators to prioritize civilian safety and ensure that aid can reach affected communities.",
+            "sim_score": 0.849
+          },
+          {
+            "sentence": "Peace negotiations between rival nations resumed this week after months of escalating military tensions.",
+            "sim_score": 0.8458
+          },
+          {
+            "sentence": "Observers remain cautious but hopeful that diplomatic efforts may finally lead to a lasting resolution.",
+            "sim_score": 0.8315
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "The summit concluded with calls for stronger international cooperation to address climate change while supporting sustainable economic progress.",
+            "impact_score": 2.535
+          }
+        ]
+      }
+    ]
+  },
+  "w5": {
+    "drift_threshold": 0.480362,
+    "n_windows": 4,
+    "n_drifts": 3,
+    "results": [
+      {
+        "window_previous": "2024-01-03",
+        "window_current": "2024-01-18",
+        "drift": 0.59624,
+        "drift_threshold": 0.480362,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Meanwhile, humanitarian groups warned that thousands of civilians are fleeing nearby towns due to continued shelling.",
+            "sim_score": 0.968
+          },
+          {
+            "sentence": "Defense analysts say the conflict increasingly relies on advanced technology, including AI-assisted targeting software that can identify military vehicles from satellite images.",
+            "sim_score": 0.9669
+          },
+          {
+            "sentence": "Economic analysts also noted that the escalation could disrupt energy trade routes passing through the region, potentially affecting oil prices globally.",
+            "sim_score": 0.9462
+          },
+          {
+            "sentence": "Officials reported that drone surveillance systems were heavily used to track troop movements across the disputed region.",
+            "sim_score": 0.9422
+          },
+          {
+            "sentence": "Recent fighting intensified along the eastern border where military forces exchanged artillery fire overnight.",
+            "sim_score": 0.8752
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Some economists suggest that investment in renewable energy and digital infrastructure may help stimulate growth while addressing climate and technological challenges simultaneously.",
+            "impact_score": 2.4767
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-18",
+        "window_current": "2024-01-23",
+        "drift": 0.837321,
+        "drift_threshold": 0.480362,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Some economists suggest that investment in renewable energy and digital infrastructure may help stimulate growth while addressing climate and technological challenges simultaneously.",
+            "sim_score": 1.0
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "impact_score": 7.2077
+          },
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "impact_score": 6.5293
+          },
+          {
+            "sentence": "The new systems rely on machine learning algorithms to detect unusual activity and transmit real-time intelligence to command centers.",
+            "impact_score": 6.0007
+          },
+          {
+            "sentence": "Military officials announced that autonomous surveillance drones have been deployed along several contested borders.",
+            "impact_score": 5.8063
+          },
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "impact_score": 5.5064
+          }
+        ]
+      },
+      {
+        "window_previous": "2024-01-23",
+        "window_current": "2024-02-27",
+        "drift": 0.75148,
+        "drift_threshold": 0.480362,
+        "drift_detected": true,
+        "previous_window_sentences": [
+          {
+            "sentence": "Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.",
+            "sim_score": 0.988
+          },
+          {
+            "sentence": "The new systems rely on machine learning algorithms to detect unusual activity and transmit real-time intelligence to command centers.",
+            "sim_score": 0.9785
+          },
+          {
+            "sentence": "However, critics warn that increasing automation in military operations raises ethical concerns about accountability and the potential escalation of conflicts.",
+            "sim_score": 0.9611
+          },
+          {
+            "sentence": "Meanwhile, international organizations are calling for agreements that regulate the use of AI-driven weapons systems before they become widely adopted.",
+            "sim_score": 0.9274
+          },
+          {
+            "sentence": "Military officials announced that autonomous surveillance drones have been deployed along several contested borders.",
+            "sim_score": 0.9183
+          }
+        ],
+        "current_window_drift_sentences": [
+          {
+            "sentence": "Peace negotiations between rival nations resumed this week after months of escalating military tensions.",
+            "impact_score": 5.2786
+          },
+          {
+            "sentence": "Diplomats from several countries gathered to discuss a potential ceasefire agreement that could end the conflict.",
+            "impact_score": 4.783
+          },
+          {
+            "sentence": "Analysts say both sides are under pressure as the economic costs of the war continue to rise and international sanctions limit trade opportunities.",
+            "impact_score": 4.6337
+          },
+          {
+            "sentence": "Humanitarian organizations have urged negotiators to prioritize civilian safety and ensure that aid can reach affected communities.",
+            "impact_score": 3.4071
+          },
+          {
+            "sentence": "Observers remain cautious but hopeful that diplomatic efforts may finally lead to a lasting resolution.",
+            "impact_score": 2.9037
+          }
+        ]
+      }
+    ]
+  },
+  "elapsed_s": 0.61
+}
