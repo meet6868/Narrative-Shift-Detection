@@ -1,317 +1,449 @@
-# Narrative Shift Detection - Implementation
+# Narrative Shift Detection using Temporal Contrastive Learning
 
-This directory contains the complete implementation of the **Temporal Contrastive Learning for Generalized Narrative Shift Detection in News Articles** system.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status: Research](https://img.shields.io/badge/status-research-orange.svg)]()
 
-## Overview
+A comprehensive framework for detecting narrative shifts in news articles using **Temporal Contrastive Learning (TCL)**. This project implements multiple approaches ranging from baseline windowing to advanced dynamic segmentation with entity-aware tracking.
 
-This implementation follows the 8-stage pipeline described in `combined_narrative_shift.pdf`:
+---
 
-1. **Data Collection and Entity Indexing**: Load and filter time-stamped news articles
-2. **Temporal Ordering and Sentence Segmentation**: Sort by time and segment into sentences
-3. **Sentence Encoding**: Encode using Sentence-BERT
-4. **Temporal Contrastive Learning**: Train with SimCLR framework and InfoNCE loss
-5. **Article-Level Narrative Aggregation**: Pool sentence embeddings
-6. **Narrative Change Detection**: Compute shift scores using cosine distance
-7. **Sentence-Level Shift Localization**: Identify sentences driving shifts
-8. **Explanation Generation**: Generate interpretable text-grounded explanations
+## 📚 Table of Contents
 
-## Project Structure
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Approaches Overview](#approaches-overview)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Results](#results)
+- [Documentation](#documentation)
+- [Dataset](#dataset)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [License](#license)
+- [Contact](#contact)
+- [Roadmap](#roadmap)
+
+---
+
+## 🎯 Overview
+
+This project detects **narrative shifts** in news coverage across five major topics:
+
+- **War & Conflict**
+- **Health & Medicine**
+- **Economics & Business**
+- **Technology & Innovation**
+- **Climate & Environment**
+
+### What is a Narrative Shift?
+
+A narrative shift occurs when the framing, sentiment, or focus of news coverage changes over time. For example:
+
+- **Climate Change:** From "climate skepticism" → "climate emergency"
+- **COVID-19:** From "foreign virus" → "public health crisis"
+- **AI Technology:** From "automation threat" → "productivity tool"
+
+### Methodology
+
+We employ **Temporal Contrastive Learning (TCL)** to:
+
+1. Learn temporally-aware embeddings of news articles
+2. Detect semantic shifts between consecutive time windows
+3. Quantify narrative drift with statistical significance testing
+4. Track entity-specific narrative evolution (Approach 5)
+
+---
+
+## 📁 Project Structure
 
 ```
-Main_Code/
-├── src/                          # Source code
-│   ├── data/                     # Data collection and preprocessing
-│   │   ├── collector.py          # Stage 1: Data collection
-│   │   ├── preprocessor.py       # Stage 2: Preprocessing
-│   │   └── entity_indexer.py     # Entity recognition and indexing
-│   ├── models/                   # Model components
-│   │   ├── encoder.py            # Stage 3: Sentence-BERT encoder
-│   │   ├── contrastive.py        # Stage 4: SimCLR contrastive learning
-│   │   └── aggregator.py         # Stage 5: Narrative aggregation
-│   ├── detection/                # Detection and explanation
-│   │   ├── shift_detector.py     # Stage 6: Shift detection
-│   │   ├── localizer.py          # Stage 7: Sentence localization
-│   │   └── explainer.py          # Stage 8: Explanation generation
-│   ├── utils/                    # Utilities
-│   │   ├── config.py             # Configuration management
-│   │   └── metrics.py            # Evaluation metrics
-│   └── pipeline.py               # Complete integrated pipeline
-├── data/                         # Data directory
-│   ├── raw/                      # Raw input articles
-│   ├── processed/                # Processed data
-│   └── outputs/                  # Detection results
-├── config/                       # Configuration files
-│   └── config.json               # Main configuration
-├── code.ipynb                    # Jupyter notebook demonstration
-├── requirements.txt              # Python dependencies
-└── README.md                     # This file
+Naretve_Shift/
+├── README.md                          # This file
+├── requirements.txt                   # Python dependencies
+├── INLP.pdf                          # Project documentation
+├── reference.md                       # Research references
+│
+├── TCL/                              # Main implementation folder
+│   ├── README.md                     # TCL approaches overview
+│   ├── TCL_Pipeline_1.ipynb          # Approach 1: Baseline windowing
+│   ├── TCL_Pipeline_2.ipynb          # Approach 2: Group-based segmentation
+│   ├── TCL_Pipeline_4.ipynb          # Approach 4: Dynamic Ruptures segmentation
+│   ├── TCL_Pipeline_5.ipynb          # Approach 5: NER-enhanced (in development)
+│   └── docs/                         # Detailed documentation
+│       ├── approach_1.md             # Approach 1 methodology
+│       ├── approach_2.md             # Approach 2 methodology
+│       ├── approach_3.md             # Approach 3 (deferred)
+│       ├── approach_4.md             # Approach 4 methodology
+│       ├── approach_5.md             # Approach 5 methodology
+│       ├── TCL_Framework_Complete.pdf # Complete framework PDF
+│       └── TCL_Framework_Complete.tex # LaTeX source
+│
+├── Pre_Processing/                   # Data preprocessing scripts
+│   ├── CSV_Explorer.ipynb            # Data exploration
+│   ├── Data_Combine.ipynb            # Dataset combination
+│   ├── Data_Preprocessing.ipynb      # Data cleaning & preparation
+│   └── Narrative_Shift_Detection.ipynb # Initial detection experiments
+│
+├── Processed_Data/                   # Cleaned and processed datasets
+│   ├── all_articles_english_with_dates.csv
+│   ├── ALL_Combined_Data.csv
+│   ├── topic_embeddings.json
+│   ├── Topic_Wise_w3/               # Topic-wise data (window=3)
+│   ├── Topic_Wise_w5/               # Topic-wise data (window=5)
+│   └── Soft_Labeling_Topic_Articles/ # Soft-labeled articles
+│
+├── DATA/                             # Raw datasets
+│   ├── CNN_Articels_clean.csv
+│   ├── Covid_News.csv
+│   ├── NewsData.io_Sample_data_crypto.csv
+│   └── Webhose free-news-datasets master News_Datasets/
+│
+├── Output/                           # Results and outputs
+│   ├── Model/                        # Trained model checkpoints
+│   ├── Model_output/                 # Approach-wise results
+│   │   ├── APPROACH_COMPARISON.md    # Comprehensive comparison
+│   │   ├── Approach_1_NoOverlap/     # Baseline (W=3, S=3)
+│   │   ├── Approach_1_Overlap/       # Baseline (W=3, S=1)
+│   │   ├── Approach_2_Fixed_Size/    # 3-day fixed groups
+│   │   ├── Approach_2_Day_Gap/       # Max 3-day gap groups
+│   │   └── Approach_4_Article_Level/ # Dynamic segmentation
+│   ├── Data_Cleaning_Visualization/  # Data quality visualizations
+│   ├── Narrative_Shift_Window_Detection/ # Change point analysis
+│   └── Topic_Labeling_Comparison/    # Topic modeling results
+│
+├── Research_Paper/                   # Academic references
+│   ├── Bayesian Online Changepoint Detection.pdf
+│   ├── Dynamic Topic Models.pdf
+│   ├── Event_Segnment.pdf
+│   ├── TCL_vs_Baselines_Narrative_Shift_Comparison.pdf
+│   └── TCL_Complete_Flow.md
+│
+└── Input/                            # User input samples
+    └── sample_articles/
 ```
 
-## Quick Start
+---
 
-### 1. Install Dependencies
+## 🚀 Approaches Overview
+
+We implemented **5 approaches**, each building upon the previous:
+
+### Approach 1: Baseline Day-Level Windowing
+
+**Status:** ✅ Complete  
+**Method:** Fixed 3-day temporal windows  
+**Variants:** 2 (Overlap W=3,S=1 / NoOverlap W=3,S=3)
+
+**Metrics:**
+- Intra-Topic Similarity: 0.2182 (NoOverlap)
+- Temporal Consistency: 0.9155
+- Separation Score: -4.78
+
+**Strengths:**
+- Simple, interpretable baseline
+- Clear temporal boundaries
+
+**Limitations:**
+- Fixed window size (inflexible)
+- Sparse data handling issues
+- No entity awareness
+
+[📄 Full Documentation](TCL/docs/approach_1.md)
+
+---
+
+### Approach 2: Group-Based Segmentation
+
+**Status:** ✅ Complete  
+**Method:** Adaptive article grouping (day-based)  
+**Variants:** 2 (Fixed Day / Day Gap)
+
+**Metrics (Fixed Day):**
+- Intra-Topic Similarity: 0.3365 (+54% vs Approach 1)
+- Temporal Consistency: 0.9193
+- Total Windows: 669
+
+**Metrics (Day Gap):**
+- Intra-Topic Similarity: 0.3185
+- Temporal Consistency: 0.8948
+- Total Windows: 732
+- Better Separation Score: -8.83
+
+**Strengths:**
+- Better sparse data handling
+- Improved intra-topic coherence
+- Enhanced visualizations (dual subplots)
+
+**Limitations:**
+- Variable window interpretation
+- Still day-level aggregation
+- No entity awareness
+
+[📄 Full Documentation](TCL/docs/approach_2.md)
+
+---
+
+### Approach 3: Adaptive Window Sizing
+
+**Status:** ⏸️ Deferred  
+**Method:** Topic-specific window optimization  
+
+**Reason for Deferral:**
+- Requires 3+ years of historical data
+- High computational cost (GPU cluster)
+- Timeline constraint (2029+)
+
+[📄 Full Documentation](TCL/docs/approach_3.md)
+
+---
+
+### Approach 4: Dynamic Ruptures Segmentation
+
+**Status:** ✅ Complete  
+**Method:** PELT algorithm with RBF kernel for semantic change points  
+**Configuration:** penalty=0.1, min_size=2 days
+
+**Metrics:**
+- Intra-Topic Similarity: **0.9997** 🏆 (Nearly perfect!)
+- Temporal Consistency: **0.9877** 🏆 (Best!)
+- Separation Score: 1.0872
+- Total Windows: 356 (dynamic)
+
+**Strengths:**
+- Extremely high coherence (0.9997)
+- Best temporal consistency (0.9877)
+- Dynamic adaptive segmentation
+- Sentence-level granularity
+
+**Limitations:**
+- Weak separation score (< 2.0)
+- No entity awareness
+- Computationally intensive
+
+**Innovation:** Uses Ruptures library for automatic change point detection based on semantic shifts rather than fixed time windows.
+
+[📄 Full Documentation](TCL/docs/approach_4.md)
+
+---
+
+### Approach 5: NER-Enhanced Entity-Aware Tracking
+
+**Status:** 🚧 Under Development  
+**Method:** Entity-aware embeddings with spaCy NER  
+
+**Planned Features:**
+- Track entity-specific narratives
+- Filter shifts by entity type (PERSON, ORG, GPE, EVENT)
+- Reduce false positives from entity changes
+- Query capability: "Show Biden narrative shifts"
+
+**Expected Impact:**
+- 25% reduction in false positives
+- Entity-level drift tracking
+- Production-ready performance
+
+[📄 Full Documentation](TCL/docs/approach_5.md)
+
+---
+
+## ✨ Key Features
+
+### 1. **Multi-Approach Framework**
+- Baseline to advanced techniques
+- Comprehensive performance comparison
+- Real metrics from actual implementations
+
+### 2. **Temporal Contrastive Learning**
+- Learn time-aware embeddings
+- Contrastive loss for topic separation
+- Temporal consistency metrics
+
+### 3. **Dynamic Segmentation (Approach 4)**
+- Ruptures PELT algorithm
+- RBF kernel for semantic boundaries
+- Adaptive segment sizing (2-40 days)
+
+### 4. **Comprehensive Evaluation**
+- Intra-topic similarity (coherence)
+- Inter-topic similarity (separation)
+- Separation score (distinctness)
+- Temporal consistency (continuity)
+
+### 5. **Rich Visualizations**
+- Drift timeline plots
+- Z-score significance testing
+- Similarity matrix heatmaps
+- Model evaluation metrics
+
+### 6. **Entity-Aware Tracking (Approach 5)**
+- Named Entity Recognition (NER)
+- Entity-specific narratives
+- Reduced false positives
+
+---
+
+## �� Results Summary
+
+### Performance Comparison (All Approaches)
+
+| Approach | Intra-Topic | Temporal | Separation | Windows | Entity-Aware |
+|----------|-------------|----------|------------|---------|--------------|
+| **1 (NoOverlap)** | 0.2182 | 0.9155 | -4.78 | N/A | ❌ |
+| **1 (Overlap)** | 0.1431 | 0.8978 | -5.01 | N/A | ❌ |
+| **2 (Fixed Day)** | 0.3365 ⬆️ | 0.9193 | -29.56 | 669 | ❌ |
+| **2 (Day Gap)** | 0.3185 ⬆️ | 0.8948 | -8.83 | 732 | ❌ |
+| **4 (Ruptures)** | **0.9997** 🏆 | **0.9877** �� | 1.09 | 356 | ❌ |
+| **5 (NER)** | TBD | TBD | TBD | TBD | ✅ |
+
+### Key Findings
+
+**🏆 Best Overall Performance:** Approach 4 (Ruptures)
+- Nearly perfect intra-topic similarity (0.9997)
+- Highest temporal consistency (0.9877)
+- Dynamic adaptive segmentation
+
+**🏆 Best for Sparse Data:** Approach 2 Day Gap
+- Most windows generated (732)
+- Adaptive to data gaps
+- Better separation score
+
+**🏆 Best for Production (Planned):** Approach 5
+- Entity-aware tracking
+- Reduced false positives
+- Query by entity capability
+
+[📊 Detailed Comparison](Output/Model_output/APPROACH_COMPARISON.md)
+
+---
+
+## 🛠️ Installation
+
+### Prerequisites
+
+- Python 3.8+
+- CUDA-capable GPU (recommended for training)
+- 16GB+ RAM
+
+### Setup
 
 ```bash
+# Clone repository
+git clone https://github.com/meet6868/Narrative-Shift-Detection.git
+cd Narrative-Shift-Detection
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Download spaCy model (for Approach 5)
 python -m spacy download en_core_web_sm
 ```
 
-### 2. Run the Jupyter Notebook
+### Dependencies
+
+```
+torch>=1.9.0
+transformers>=4.18.0
+sentence-transformers>=2.2.0
+ruptures>=1.1.7
+spacy>=3.2.0
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=0.24.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Data Preprocessing
 
 ```bash
-jupyter notebook code.ipynb
+# Navigate to preprocessing folder
+cd Pre_Processing
+
+# Run preprocessing pipeline
+jupyter notebook Data_Preprocessing.ipynb
 ```
 
-The notebook contains:
-- Complete pipeline demonstration
-- Sample dataset creation
-- Stage-by-stage execution
-- Visualization of results
-- Export functionality
-
-### 3. Use the Python API
-
-```python
-from src.pipeline import run_narrative_shift_detection
-
-# Run complete pipeline
-results = run_narrative_shift_detection(
-    data_path='data/raw/sample_articles.json',
-    topic='climate',
-    entity='Climate Summit',
-    output_path='data/outputs/results.json'
-)
-
-# Access detected shifts
-for shift in results['detected_shifts']:
-    print(f"Shift Score: {shift['shift_score']}")
-    print(f"Key Sentences: {shift['key_sentences']}")
-    print(f"Explanation: {shift['explanation']}")
-```
-
-### 4. Run from Command Line
+### 2. Run TCL Pipeline (Approach 4 - Best Performance)
 
 ```bash
-python -m src.pipeline \
-    --data data/raw/articles.json \
-    --topic politics \
-    --entity "Joe Biden" \
-    --output data/outputs/results.json
+cd ../TCL
+
+# Open and run the pipeline
+jupyter notebook TCL_Pipeline_4.ipynb
 ```
 
-## Input Data Format
+### 3. View Results
 
-The system expects JSON files with the following structure:
-
-```json
-{
-  "articles": [
-    {
-      "id": "article_001",
-      "title": "Article Title",
-      "text": "Full article text with multiple sentences...",
-      "timestamp": "2024-01-15T10:00:00Z",
-      "source": "news_source",
-      "topic": "climate",
-      "entity": "Climate Summit"
-    }
-  ]
-}
-```
-
-## Output Format
-
-The system produces comprehensive results including:
-
-```json
-{
-  "entity": "Climate Summit",
-  "topic": "climate",
-  "total_articles": 5,
-  "detected_shifts": [
-    {
-      "shift_id": 1,
-      "date_from": "2024-01-16",
-      "date_to": "2024-01-17",
-      "shift_score": 0.78,
-      "category": "high",
-      "key_sentences": ["Sentence 1", "Sentence 2"],
-      "explanation": "Narrative shifted from optimistic to critical..."
-    }
-  ],
-  "temporal_trajectory": [...]
-}
-```
-
-## Configuration
-
-Edit `config/config.json` to customize:
-
-- **Model settings**: Encoder, embedding dimensions, temperature
-- **Detection parameters**: Thresholds, top-K sentences
-- **Training parameters**: Epochs, learning rate, batch size
-
-```json
-{
-  "model": {
-    "sentence_encoder": "sentence-transformers/all-mpnet-base-v2",
-    "temperature": 0.07
-  },
-  "detection": {
-    "shift_threshold": 0.5,
-    "top_k_sentences": 5
-  }
-}
-```
-
-## Key Components
-
-### Sentence Encoder (`src/models/encoder.py`)
-- Uses Sentence-BERT for semantic encoding
-- Produces 768-dimensional embeddings
-- GPU-accelerated when available
-
-### Temporal Contrastive Learner (`src/models/contrastive.py`)
-- Implements SimCLR framework
-- InfoNCE loss function
-- Positive pairs: Adjacent time windows
-- Negative pairs: Distant time windows
-
-### Shift Detector (`src/detection/shift_detector.py`)
-- Computes cosine distance between narrative embeddings
-- Categorizes shifts: low, medium, high
-- Configurable thresholds
-
-### Sentence Localizer (`src/detection/localizer.py`)
-- Identifies top-K sentences driving shifts
-- Uses embedding divergence
-- Provides sentence-level explanations
-
-## Example Usage
-
-### Example 1: Climate Change Narrative
-
-```python
-from src.pipeline import NarrativeShiftPipeline
-
-pipeline = NarrativeShiftPipeline()
-results = pipeline.run_full_pipeline(
-    data_path='data/raw/climate_articles.json',
-    topic='climate',
-    entity='Climate Summit'
-)
-```
-
-### Example 2: Political Campaign Narrative
-
-```python
-results = run_narrative_shift_detection(
-    data_path='data/raw/political_articles.json',
-    topic='politics',
-    entity='Presidential Candidate',
-    output_path='data/outputs/political_shifts.json'
-)
-```
-
-### Example 3: Training Contrastive Model
-
-```python
-pipeline = NarrativeShiftPipeline()
-articles = pipeline.load_data('data/raw/articles.json')
-articles = pipeline.preprocess_articles(articles)
-articles = pipeline.encode_sentences(articles)
-
-pipeline.train_contrastive_model(
-    articles=articles,
-    epochs=50,
-    save_path='models/contrastive_model.pt'
-)
-```
-
-## Evaluation
-
-```python
-from src.utils.metrics import ShiftDetectionMetrics, print_evaluation_report
-
-metrics = ShiftDetectionMetrics()
-
-# Compute metrics
-accuracy = metrics.compute_accuracy(predictions, ground_truth)
-precision_recall = metrics.compute_precision_recall_f1(predictions, ground_truth)
-
-# Print report
-print_evaluation_report({
-    'accuracy': accuracy,
-    **precision_recall
-})
-```
-
-## Visualization
-
-The notebook includes visualization code for:
-- Shift score timeline
-- Narrative trajectory
-- Sentence-level heatmaps
-- Category distribution
-
-## Customization
-
-### Add Custom Encoders
-
-```python
-from src.models.encoder import SentenceEncoder
-
-custom_encoder = SentenceEncoder(
-    model_name='your-model-name',
-    device='cuda'
-)
-```
-
-### Custom Aggregation Methods
-
-```python
-from src.models.aggregator import NarrativeAggregator
-
-aggregator = NarrativeAggregator(method='weighted')  # or 'max', 'attention'
-```
-
-### Custom Shift Detection Logic
-
-```python
-from src.detection.shift_detector import NarrativeShiftDetector
-
-detector = NarrativeShiftDetector(
-    threshold=0.6,
-    high_threshold=0.8
-)
-```
-
-## Performance
-
-- **CPU**: ~2-3 seconds per article (encoding)
-- **GPU**: ~0.5-1 second per article (encoding)
-- **Memory**: ~2GB for 1000 articles
-- **Scalability**: Tested up to 10,000 articles
-
-## Troubleshooting
-
-### Import Errors
 ```bash
-export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+# Check output folder
+cd ../Output/Model_output/Approach_4_Article_Level/
+
+# View drift timelines
+ls drift_timeline_*.png
+
+# See model evaluation
+cat evaluation_metrics.txt
 ```
 
-### CUDA Out of Memory
-```python
-config.set('model.batch_size', 16)  # Reduce batch size
-```
+---
 
-### Slow Encoding
-```python
-# Use smaller model
-config.set('model.sentence_encoder', 'sentence-transformers/all-MiniLM-L6-v2')
-```
+## 📖 Documentation
 
-## Citation
+- **[TCL Framework Complete](TCL/docs/TCL_Framework_Complete.pdf)** - Comprehensive technical documentation
+- **[Approach Comparison](Output/Model_output/APPROACH_COMPARISON.md)** - Detailed performance comparison
+- **[Research References](reference.md)** - Academic papers and citations
+
+---
+
+## 📊 Dataset
+
+### Data Sources
+
+- **US Politics News Sentiment Dataset** (primary)
+- **CNN Articles** (supplementary)
+- **COVID-19 News** (supplementary)
+- **Webhose News Datasets** (topic-specific)
+
+### Topics Covered
+
+1. War & Conflict
+2. Health & Medicine
+3. Economics & Business
+4. Technology & Innovation
+5. Climate & Environment
+
+### Statistics
+
+- **Total Articles:** 10,000+
+- **Time Range:** 2020-2024
+- **Languages:** English (filtered)
+- **Labeled Examples:** 500+ manual annotations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📝 Citation
 
 ```bibtex
 @article{ghelani2026narrative,
@@ -321,18 +453,31 @@ config.set('model.sentence_encoder', 'sentence-transformers/all-MiniLM-L6-v2')
 }
 ```
 
-## License
+---
+
+## 📄 License
 
 MIT License
 
-## Contact
+---
+
+## 📧 Contact
 
 For questions or issues, please open an issue on GitHub or contact the author.
 
-## References
+---
 
-- **Paper**: See `combined_narrative_shift.pdf` in the parent directory
-- **Sentence-BERT**: https://www.sbert.net/
-- **SimCLR**: https://github.com/google-research/simclr
-- **Dataset Source**: https://github.com/rangeva/USPoliticsNewsSentiment/
-# Narrative-Shift-Detection
+## 🗺️ Roadmap
+
+- [x] Approach 1: Baseline windowing
+- [x] Approach 2: Group-based segmentation
+- [x] Approach 4: Dynamic Ruptures segmentation
+- [ ] Approach 5: NER-enhanced tracking (in progress)
+- [ ] Approach 3: Adaptive window sizing (2029+)
+- [ ] Web interface for narrative exploration
+- [ ] Real-time news monitoring system
+- [ ] Multi-language support
+
+---
+
+**Repository:** [github.com/meet6868/Narrative-Shift-Detection](https://github.com/meet6868/Narrative-Shift-Detection)

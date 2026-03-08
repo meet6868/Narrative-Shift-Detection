@@ -272,6 +272,29 @@ $RECYCLE.BIN/
 *.log
 
 # ============================================================================
+# LATEX / PDF GENERATION
+# ============================================================================
+
+# LaTeX auxiliary files
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+
+# Keep only .tex and .pdf files
+# *.tex  # Keep source
+# *.pdf  # Keep compiled output
+
+# ============================================================================
 # PROJECT SPECIFIC
 # ============================================================================
 
