@@ -1,0 +1,111 @@
+overlapping
+==========================================================================================
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 1
+####################################################################################################
+
+Shift #1: 2022-01-04 -> 2022-02-15
+similarity=0.4295 | shift_score=0.5705 | day_z=1.0000
+
+Day 1 - article_3_s4 (Article 3, Sentence 4)
+topic_weight=0.280
+    [article_3_s2] Negotiators focused on proposals involving security guarantees for Ukraine and the withdrawal of certain military forces.
+    [article_3_s3] While both sides acknowledged progress in the discussions, major disagreements remain.
+>>> [article_3_s4] International leaders encouraged continued dialogue, arguing that diplomacy offers the best path to ending the war and preventing further humanitarian suffering.
+
+Day 2 - article_0_s0 (Article 0, Sentence 0)
+topic_weight=0.275
+>>> [article_0_s0] Military tensions between Russia and Ukraine continued to rise as thousands of Russian troops gathered near the Ukrainian border.
+    [article_0_s1] Western intelligence agencies reported large movements of tanks, artillery and missile systems toward several strategic locations close to Ukraine.
+    [article_0_s2] Ukrainian officials warned that the buildup could signal preparations for a possible invasion.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+----------------------------------------window size 5---------------------------------------
+
+---------------
+Topic - War
+---------------
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 2
+####################################################################################################
+
+Shift #1: 2022-01-04 -> 2022-02-15
+similarity=0.4295 | shift_score=0.5705 | day_z=1.4086
+
+Day 1 - article_3_s4 (Article 3, Sentence 4)
+topic_weight=0.280
+    [article_3_s2] Negotiators focused on proposals involving security guarantees for Ukraine and the withdrawal of certain military forces.
+    [article_3_s3] While both sides acknowledged progress in the discussions, major disagreements remain.
+>>> [article_3_s4] International leaders encouraged continued dialogue, arguing that diplomacy offers the best path to ending the war and preventing further humanitarian suffering.
+
+Day 2 - article_0_s0 (Article 0, Sentence 0)
+topic_weight=0.275
+>>> [article_0_s0] Military tensions between Russia and Ukraine continued to rise as thousands of Russian troops gathered near the Ukrainian border.
+    [article_0_s1] Western intelligence agencies reported large movements of tanks, artillery and missile systems toward several strategic locations close to Ukraine.
+    [article_0_s2] Ukrainian officials warned that the buildup could signal preparations for a possible invasion.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2022-02-25 -> 2022-03-15
+similarity=0.4866 | shift_score=0.5134 | day_z=-0.5958
+
+Day 1 - article_1_s5 (Article 1, Sentence 5)
+topic_weight=0.269
+    [article_1_s3] Russian troops advanced from several directions, including the north through Belarus and from the eastern region of Donbas.
+    [article_1_s4] International leaders condemned the attack and announced plans to impose economic sanctions on Russia.
+>>> [article_1_s5] Military analysts say the invasion marks the largest military conflict in Europe in decades.
+
+Day 2 - article_2_s1 (Article 2, Sentence 1)
+topic_weight=0.283
+    [article_2_s0] As the fighting in Ukraine entered its third week, humanitarian organizations warned of a growing crisis for civilians trapped in war zones.
+>>> [article_2_s1] Thousands of families have fled major cities as airstrikes and artillery bombardments damaged homes, hospitals and schools.
+    [article_2_s2] The United Nations reported that millions of refugees had crossed into neighboring countries, including Poland and Romania.
+    [article_2_s3] Emergency aid groups are struggling to provide food, shelter and medical assistance to displaced populations.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
