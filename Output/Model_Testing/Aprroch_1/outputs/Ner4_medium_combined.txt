@@ -1,0 +1,264 @@
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+
+FILE 4: Ner4_medium_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_medium_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_medium_combined.txt
+====================================================================================================
+
+NARRATIVE SHIFT COUNT BY TOPIC
+----------------------------------------------------------------------------------------------------
+War: 0
+Health: 5
+Economics: 2
+Technology: 5
+Climate: 1
+
+
+====================================================================================================
+FILE 4: Ner4_medium_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_medium_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_medium_combined.txt
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-10
+similarity=0.6934 | shift_score=0.3066 | day_z=2.2270
+
+Day 1 - article_0_s9 (Article 0, Sentence 9)
+topic_weight=0.208
+>>> [article_0_s9] The company claims that smarter resource management can reduce power consumption across devices and data centers, contributing to its climate goals.
+    [article_0_s10] In healthcare, Apple continues to expand AI-driven features in its wearable devices, focusing on fitness tracking and early detection of potential health issues.
+    [article_0_s11] While these tools are not intended to replace medical advice, they are increasingly seen as valuable supplements to personal health management.
+
+Day 2 - article_1_s12 (Article 1, Sentence 12)
+topic_weight=0.235
+    [article_1_s10] In the health sector, Apple is refining its algorithms to improve the accuracy of fitness and wellness insights.
+    [article_1_s11] Collaboration with research institutions is helping to ensure that these features meet higher standards of reliability.
+>>> [article_1_s12] The narrative is subtly shifting toward efficiency and performance, while maintaining continuity with earlier messaging.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2023-09-25 -> 2024-01-30
+similarity=0.7272 | shift_score=0.2728 | day_z=-0.3439
+
+Day 1 - article_2_s10 (Article 2, Sentence 10)
+topic_weight=0.213
+    [article_2_s8] While Apple promotes the efficiency of its systems, external analysts are calling for more detailed reporting on energy usage associated with AI workloads.
+    [article_2_s9] In healthcare, Apple is increasingly cautious in how it presents AI-driven insights, emphasizing that these tools are designed to assist rather than replace professional medical advice.
+>>> [article_2_s10] The narrative now incorporates a stronger focus on trust, without departing significantly from earlier themes of enhancement and optimization.
+
+Day 2 - article_3_s6 (Article 3, Sentence 6)
+topic_weight=0.204
+>>> [article_3_s6] Climate goals are increasingly integrated into AI strategy, with the company exploring ways to align technological advancement with sustainability commitments.
+    [article_3_s7] This includes optimizing hardware and software to reduce environmental impact.
+    [article_3_s8] Healthcare applications are also evolving, with a stronger emphasis on validation and collaboration with medical experts.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2024-10-05 -> 2025-01-12
+similarity=0.7880 | shift_score=0.2120 | day_z=-0.4091
+
+Day 1 - article_5_s8 (Article 5, Sentence 8)
+topic_weight=0.239
+    [article_5_s6] Healthcare applications continue to evolve gradually, with an emphasis on user safety and data accuracy.
+    [article_5_s7] Apple is working to ensure that its AI-driven features meet both consumer expectations and regulatory standards.
+>>> [article_5_s8] The narrative shows strong continuity, with only subtle shifts in emphasis.
+
+Day 2 - article_6_s6 (Article 6, Sentence 6)
+topic_weight=0.214
+    [article_6_s5] Apple is exploring new technologies to reduce energy consumption and improve efficiency.
+>>> [article_6_s6] In healthcare, the company is expanding its AI capabilities cautiously, ensuring that new features are thoroughly tested and validated.
+    [article_6_s7] The narrative reflects a balanced approach, integrating multiple priorities without significant shifts in direction.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2023-05-10 -> 2023-09-25
+similarity=0.6328 | shift_score=0.3672 | day_z=-0.4149
+
+Day 1 - article_1_s12 (Article 1, Sentence 12)
+topic_weight=0.235
+    [article_1_s10] In the health sector, Apple is refining its algorithms to improve the accuracy of fitness and wellness insights.
+    [article_1_s11] Collaboration with research institutions is helping to ensure that these features meet higher standards of reliability.
+>>> [article_1_s12] The narrative is subtly shifting toward efficiency and performance, while maintaining continuity with earlier messaging.
+
+Day 2 - article_2_s8 (Article 2, Sentence 8)
+topic_weight=0.204
+>>> [article_2_s8] While Apple promotes the efficiency of its systems, external analysts are calling for more detailed reporting on energy usage associated with AI workloads.
+    [article_2_s9] In healthcare, Apple is increasingly cautious in how it presents AI-driven insights, emphasizing that these tools are designed to assist rather than replace professional medical advice.
+    [article_2_s10] The narrative now incorporates a stronger focus on trust, without departing significantly from earlier themes of enhancement and optimization.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2024-06-18 -> 2024-10-05
+similarity=0.5988 | shift_score=0.4012 | day_z=-0.4246
+
+Day 1 - article_4_s10 (Article 4, Sentence 10)
+topic_weight=0.241
+    [article_4_s8] In healthcare, the company continues to refine its AI-driven features, with a focus on improving accuracy and usability.
+    [article_4_s9] Partnerships with research institutions are helping to ensure that these tools are grounded in scientific evidence.
+>>> [article_4_s10] The narrative emphasizes gradual scaling, building on earlier themes of optimization and responsibility.
+
+Day 2 - article_5_s5 (Article 5, Sentence 5)
+topic_weight=0.206
+>>> [article_5_s5] Apple has highlighted progress in its sustainability efforts, though challenges remain in scaling these initiatives globally.
+    [article_5_s6] Healthcare applications continue to evolve gradually, with an emphasis on user safety and data accuracy.
+    [article_5_s7] Apple is working to ensure that its AI-driven features meet both consumer expectations and regulatory standards.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 2
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-10
+similarity=0.5433 | shift_score=0.4567 | day_z=1.3253
+
+Day 1 - article_0_s4 (Article 0, Sentence 4)
+topic_weight=0.205
+>>> [article_0_s4] This approach aligns with Apple's broader philosophy of incremental innovation rather than disruptive change.
+    [article_0_s5] The rollout comes at a time when global economic conditions remain uncertain.
+    [article_0_s6] Inflationary pressures and fluctuating consumer demand have made it increasingly important for technology companies to deliver clear value.
+
+Day 2 - article_1_s3 (Article 1, Sentence 3)
+topic_weight=0.200
+>>> [article_1_s3] This reflects a broader strategy of gradual improvement, ensuring that AI integrations remain stable and user-friendly.
+    [article_1_s4] Economic factors continue to influence this approach.
+    [article_1_s5] Supply chain costs, particularly in semiconductor manufacturing, remain elevated due to ongoing geopolitical tensions and energy price fluctuations.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2023-05-10 -> 2024-06-18
+similarity=0.4865 | shift_score=0.5135 | day_z=-0.2352
+
+Day 1 - article_1_s3 (Article 1, Sentence 3)
+topic_weight=0.200
+>>> [article_1_s3] This reflects a broader strategy of gradual improvement, ensuring that AI integrations remain stable and user-friendly.
+    [article_1_s4] Economic factors continue to influence this approach.
+    [article_1_s5] Supply chain costs, particularly in semiconductor manufacturing, remain elevated due to ongoing geopolitical tensions and energy price fluctuations.
+
+Day 2 - article_4_s3 (Article 4, Sentence 3)
+topic_weight=0.234
+    [article_4_s1] The company has introduced incremental updates that enhance functionality without significantly altering the overall ecosystem.
+    [article_4_s2] This approach reflects a more stable economic environment, where consumer confidence has begun to recover.
+>>> [article_4_s3] While demand remains uneven across regions, Apple's steady strategy appears to be supporting consistent performance.
+    [article_4_s4] Supply chain conditions have improved slightly, though challenges remain in energy-intensive manufacturing processes.
+    [article_4_s5] Apple is working to balance efficiency with resilience in its global operations.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-10
+similarity=0.4231 | shift_score=0.5769 | day_z=2.2224
+
+Day 1 - article_0_s12 (Article 0, Sentence 12)
+topic_weight=0.260
+    [article_0_s10] In healthcare, Apple continues to expand AI-driven features in its wearable devices, focusing on fitness tracking and early detection of potential health issues.
+    [article_0_s11] While these tools are not intended to replace medical advice, they are increasingly seen as valuable supplements to personal health management.
+>>> [article_0_s12] Overall, Apple's narrative centers on enhancing existing capabilities through AI, without positioning the technology as a radical shift.
+
+Day 2 - article_1_s3 (Article 1, Sentence 3)
+topic_weight=0.248
+    [article_1_s1] Recent updates have focused on improving the accuracy of predictive systems and reducing latency in AI-driven processes.
+    [article_1_s2] Rather than introducing entirely new capabilities, the company appears committed to strengthening the performance of existing features.
+>>> [article_1_s3] This reflects a broader strategy of gradual improvement, ensuring that AI integrations remain stable and user-friendly.
+    [article_1_s4] Economic factors continue to influence this approach.
+    [article_1_s5] Supply chain costs, particularly in semiconductor manufacturing, remain elevated due to ongoing geopolitical tensions and energy price fluctuations.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2024-01-30 -> 2024-06-18
+similarity=0.4067 | shift_score=0.5933 | day_z=-0.2680
+
+Day 1 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.248
+    [article_3_s8] Healthcare applications are also evolving, with a stronger emphasis on validation and collaboration with medical experts.
+    [article_3_s9] Apple appears to be taking a more cautious approach to expanding health-related AI features.
+>>> [article_3_s10] The narrative is gradually shifting toward responsibility, while still maintaining continuity with earlier themes.
+
+Day 2 - article_4_s3 (Article 4, Sentence 3)
+topic_weight=0.214
+    [article_4_s1] The company has introduced incremental updates that enhance functionality without significantly altering the overall ecosystem.
+    [article_4_s2] This approach reflects a more stable economic environment, where consumer confidence has begun to recover.
+>>> [article_4_s3] While demand remains uneven across regions, Apple's steady strategy appears to be supporting consistent performance.
+    [article_4_s4] Supply chain conditions have improved slightly, though challenges remain in energy-intensive manufacturing processes.
+    [article_4_s5] Apple is working to balance efficiency with resilience in its global operations.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2023-09-25 -> 2024-01-30
+similarity=0.5853 | shift_score=0.4147 | day_z=-0.3642
+
+Day 1 - article_2_s6 (Article 2, Sentence 6)
+topic_weight=0.265
+    [article_2_s4] The economic environment remains mixed, with uneven recovery across global markets.
+    [article_2_s5] Consumer demand for premium devices has stabilized somewhat, but uncertainty persists.
+>>> [article_2_s6] Apple's steady approach to AI development may help reinforce consumer confidence during this period.
+    [article_2_s7] Environmental concerns continue to shape discussions around AI.
+    [article_2_s8] While Apple promotes the efficiency of its systems, external analysts are calling for more detailed reporting on energy usage associated with AI workloads.
+
+Day 2 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.248
+    [article_3_s8] Healthcare applications are also evolving, with a stronger emphasis on validation and collaboration with medical experts.
+    [article_3_s9] Apple appears to be taking a more cautious approach to expanding health-related AI features.
+>>> [article_3_s10] The narrative is gradually shifting toward responsibility, while still maintaining continuity with earlier themes.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2023-05-10 -> 2023-09-25
+similarity=0.4718 | shift_score=0.5282 | day_z=-0.4455
+
+Day 1 - article_1_s3 (Article 1, Sentence 3)
+topic_weight=0.248
+    [article_1_s1] Recent updates have focused on improving the accuracy of predictive systems and reducing latency in AI-driven processes.
+    [article_1_s2] Rather than introducing entirely new capabilities, the company appears committed to strengthening the performance of existing features.
+>>> [article_1_s3] This reflects a broader strategy of gradual improvement, ensuring that AI integrations remain stable and user-friendly.
+    [article_1_s4] Economic factors continue to influence this approach.
+    [article_1_s5] Supply chain costs, particularly in semiconductor manufacturing, remain elevated due to ongoing geopolitical tensions and energy price fluctuations.
+
+Day 2 - article_2_s4 (Article 2, Sentence 4)
+topic_weight=0.283
+    [article_2_s2] This focus comes amid growing public awareness of data privacy and algorithmic accountability.
+    [article_2_s3] Apple has reiterated its commitment to on-device processing, positioning privacy as a key differentiator in its AI strategy.
+>>> [article_2_s4] The economic environment remains mixed, with uneven recovery across global markets.
+    [article_2_s5] Consumer demand for premium devices has stabilized somewhat, but uncertainty persists.
+    [article_2_s6] Apple's steady approach to AI development may help reinforce consumer confidence during this period.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2024-06-18 -> 2024-10-05
+similarity=0.3008 | shift_score=0.6992 | day_z=-0.5367
+
+Day 1 - article_4_s10 (Article 4, Sentence 10)
+topic_weight=0.245
+    [article_4_s8] In healthcare, the company continues to refine its AI-driven features, with a focus on improving accuracy and usability.
+    [article_4_s9] Partnerships with research institutions are helping to ensure that these tools are grounded in scientific evidence.
+>>> [article_4_s10] The narrative emphasizes gradual scaling, building on earlier themes of optimization and responsibility.
+
+Day 2 - article_5_s3 (Article 5, Sentence 3)
+topic_weight=0.209
+    [article_5_s1] The company appears committed to maintaining a steady pace of development.
+    [article_5_s2] Economic conditions remain relatively stable, though uncertainties persist in certain markets.
+>>> [article_5_s3] Apple's approach reflects a desire to minimize risk while continuing to deliver value to users.
+    [article_5_s4] Climate initiatives are being integrated into ongoing operations, with a focus on reducing energy consumption and improving efficiency.
+    [article_5_s5] Apple has highlighted progress in its sustainability efforts, though challenges remain in scaling these initiatives globally.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 1
+####################################################################################################
+
+Shift #1: 2024-01-30 -> 2024-06-18
+similarity=0.6824 | shift_score=0.3176 | day_z=1.0000
+
+Day 1 - article_3_s5 (Article 3, Sentence 5)
+topic_weight=0.202
+>>> [article_3_s5] Apple continues to balance investment in AI with the need to maintain profitability, particularly in a competitive global market.
+
+Day 2 - article_4_s3 (Article 4, Sentence 3)
+topic_weight=0.200
+>>> [article_4_s3] While demand remains uneven across regions, Apple's steady strategy appears to be supporting consistent performance.
+    [article_4_s4] Supply chain conditions have improved slightly, though challenges remain in energy-intensive manufacturing processes.
+    [article_4_s5] Apple is working to balance efficiency with resilience in its global operations.
+----------------------------------------------------------------------------------------------------

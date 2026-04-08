@@ -1,0 +1,230 @@
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+
+FILE 2: Ner4_hard_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_hard_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_hard_combined.txt
+====================================================================================================
+
+NARRATIVE SHIFT COUNT BY TOPIC
+----------------------------------------------------------------------------------------------------
+War: 0
+Health: 5
+Economics: 1
+Technology: 5
+Climate: 0
+
+
+====================================================================================================
+FILE 2: Ner4_hard_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_hard_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_hard_combined.txt
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-03
+similarity=0.8024 | shift_score=0.1976 | day_z=2.1485
+
+Day 1 - article_0_s10 (Article 0, Sentence 10)
+topic_weight=0.217
+>>> [article_0_s10] However, experts caution that widespread adoption of AI could still increase overall energy demand.
+    [article_0_s11] In the health domain, Apple emphasized the potential of AI-powered wearables to detect irregularities in heart rate, sleep patterns, and physical activity.
+    [article_0_s12] Public health researchers have welcomed these developments but stress the importance of clinical validation.
+
+Day 2 - article_1_s10 (Article 1, Sentence 10)
+topic_weight=0.241
+    [article_1_s8] Healthcare applications continue to expand, with Apple integrating AI into fitness and monitoring tools.
+    [article_1_s9] However, experts warn that consumer-facing health technologies may create false confidence without proper medical oversight.
+>>> [article_1_s10] While Apple maintains confidence in its strategy, the narrative is beginning to shift from pure innovation toward a more competitive and uncertain landscape.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2024-10-14 -> 2025-01-08
+similarity=0.5494 | shift_score=0.4506 | day_z=-0.0383
+
+Day 1 - article_5_s7 (Article 5, Sentence 7)
+topic_weight=0.228
+    [article_5_s5] This includes investments in renewable energy and more efficient hardware design.
+    [article_5_s6] Healthcare initiatives continue, but with a stronger emphasis on validation and collaboration with medical institutions.
+>>> [article_5_s7] The narrative now centers on rebuilding and refining, rather than expanding aggressively.
+
+Day 2 - article_6_s7 (Article 6, Sentence 7)
+topic_weight=0.230
+    [article_6_s5] Apple is working to align its AI initiatives with global sustainability standards.
+    [article_6_s6] Healthcare applications are evolving more slowly, with a focus on reliability and user trust.
+>>> [article_6_s7] This represents a significant shift in narrative, moving away from competition toward long-term stability.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2024-01-22 -> 2024-06-30
+similarity=0.7297 | shift_score=0.2703 | day_z=-0.1143
+
+Day 1 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.225
+    [article_3_s8] Healthcare applications are also under regulatory review, with authorities assessing the safety and accuracy of AI-enabled health features.
+    [article_3_s9] This adds another layer of complexity to Apple's product development process.
+>>> [article_3_s10] The company's narrative is evolving from confident expansion to cautious navigation of an increasingly regulated environment.
+
+Day 2 - article_4_s4 (Article 4, Sentence 4)
+topic_weight=0.204
+>>> [article_4_s4] Environmental concerns are also influencing strategy.
+    [article_4_s5] The energy demands of AI systems have prompted Apple to reassess its infrastructure plans, particularly in regions facing power constraints.
+    [article_4_s6] In the health sector, ongoing debates about the reliability of AI-driven insights have led to additional testing and validation requirements.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2024-06-30 -> 2024-10-14
+similarity=0.3733 | shift_score=0.6267 | day_z=-0.4994
+
+Day 1 - article_4_s4 (Article 4, Sentence 4)
+topic_weight=0.204
+>>> [article_4_s4] Environmental concerns are also influencing strategy.
+    [article_4_s5] The energy demands of AI systems have prompted Apple to reassess its infrastructure plans, particularly in regions facing power constraints.
+    [article_4_s6] In the health sector, ongoing debates about the reliability of AI-driven insights have led to additional testing and validation requirements.
+
+Day 2 - article_5_s7 (Article 5, Sentence 7)
+topic_weight=0.228
+    [article_5_s5] This includes investments in renewable energy and more efficient hardware design.
+    [article_5_s6] Healthcare initiatives continue, but with a stronger emphasis on validation and collaboration with medical institutions.
+>>> [article_5_s7] The narrative now centers on rebuilding and refining, rather than expanding aggressively.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2023-05-03 -> 2023-09-18
+similarity=0.6707 | shift_score=0.3293 | day_z=-0.7455
+
+Day 1 - article_1_s9 (Article 1, Sentence 9)
+topic_weight=0.220
+    [article_1_s7] Apple has reiterated its commitment to carbon neutrality, but questions remain about the scalability of its approach.
+    [article_1_s8] Healthcare applications continue to expand, with Apple integrating AI into fitness and monitoring tools.
+>>> [article_1_s9] However, experts warn that consumer-facing health technologies may create false confidence without proper medical oversight.
+    [article_1_s10] While Apple maintains confidence in its strategy, the narrative is beginning to shift from pure innovation toward a more competitive and uncertain landscape.
+
+Day 2 - article_2_s12 (Article 2, Sentence 12)
+topic_weight=0.237
+    [article_2_s10] In healthcare, questions are being raised about the reliability of AI-driven diagnostics in consumer devices.
+    [article_2_s11] Medical professionals emphasize that such tools should complement, not replace, clinical judgment.
+>>> [article_2_s12] The narrative has now shifted toward risk awareness, as Apple navigates growing skepticism around its AI ambitions.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 1
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-03
+similarity=0.6382 | shift_score=0.3618 | day_z=1.0000
+
+Day 1 - article_0_s4 (Article 0, Sentence 4)
+topic_weight=0.211
+>>> [article_0_s4] Apple's leadership framed the initiative as essential to maintaining its premium market position, particularly as consumers demand smarter and more adaptive systems.
+    [article_0_s5] From an economic perspective, the timing is notable.
+    [article_0_s6] Global inflation continues to weigh on consumer spending, especially in key markets such as Europe and parts of Asia.
+
+Day 2 - article_1_s5 (Article 1, Sentence 5)
+topic_weight=0.202
+    [article_1_s3] Supply chain costs remain elevated due to geopolitical tensions and energy price volatility, particularly affecting semiconductor production.
+    [article_1_s4] Apple's reliance on global manufacturing networks adds further pressure to maintain margins while investing heavily in AI.
+>>> [article_1_s5] At the same time, climate-related concerns are gaining prominence.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-03
+similarity=0.5041 | shift_score=0.4959 | day_z=2.2177
+
+Day 1 - article_0_s13 (Article 0, Sentence 13)
+topic_weight=0.262
+    [article_0_s11] In the health domain, Apple emphasized the potential of AI-powered wearables to detect irregularities in heart rate, sleep patterns, and physical activity.
+    [article_0_s12] Public health researchers have welcomed these developments but stress the importance of clinical validation.
+>>> [article_0_s13] Overall, Apple's narrative is clear: AI is being positioned as a transformative force that will redefine its ecosystem and drive the next phase of growth.
+
+Day 2 - article_1_s5 (Article 1, Sentence 5)
+topic_weight=0.239
+    [article_1_s3] Supply chain costs remain elevated due to geopolitical tensions and energy price volatility, particularly affecting semiconductor production.
+    [article_1_s4] Apple's reliance on global manufacturing networks adds further pressure to maintain margins while investing heavily in AI.
+>>> [article_1_s5] At the same time, climate-related concerns are gaining prominence.
+    [article_1_s6] Data centers required for AI workloads consume significant energy, and environmental groups are calling for greater transparency.
+    [article_1_s7] Apple has reiterated its commitment to carbon neutrality, but questions remain about the scalability of its approach.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2024-06-30 -> 2024-10-14
+similarity=0.4718 | shift_score=0.5282 | day_z=-0.1933
+
+Day 1 - article_4_s1 (Article 4, Sentence 1)
+topic_weight=0.258
+    [article_4_s0] Apple has delayed several anticipated AI features, signaling a shift toward a more cautious deployment strategy.
+>>> [article_4_s1] Sources indicate that regulatory uncertainty, technical challenges, and market conditions have contributed to the decision.
+    [article_4_s2] The economic environment remains difficult, with fluctuating demand and rising costs affecting profitability.
+    [article_4_s3] Analysts suggest that delaying AI features may help Apple manage risks while preserving resources.
+
+Day 2 - article_5_s6 (Article 5, Sentence 6)
+topic_weight=0.230
+    [article_5_s4] Climate goals are being integrated more deeply into AI development, with an emphasis on reducing carbon impact.
+    [article_5_s5] This includes investments in renewable energy and more efficient hardware design.
+>>> [article_5_s6] Healthcare initiatives continue, but with a stronger emphasis on validation and collaboration with medical institutions.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2024-10-14 -> 2025-01-08
+similarity=0.5110 | shift_score=0.4890 | day_z=-0.4403
+
+Day 1 - article_5_s6 (Article 5, Sentence 6)
+topic_weight=0.230
+    [article_5_s4] Climate goals are being integrated more deeply into AI development, with an emphasis on reducing carbon impact.
+    [article_5_s5] This includes investments in renewable energy and more efficient hardware design.
+>>> [article_5_s6] Healthcare initiatives continue, but with a stronger emphasis on validation and collaboration with medical institutions.
+
+Day 2 - article_6_s1 (Article 6, Sentence 1)
+topic_weight=0.251
+    [article_6_s0] Apple is reframing its approach to artificial intelligence, presenting it as a foundational infrastructure rather than a competitive feature set.
+>>> [article_6_s1] Executives suggest that long-term integration and stability are more important than rapid innovation.
+    [article_6_s2] The economic outlook has improved slightly, but uncertainty remains.
+    [article_6_s3] Apple's repositioning is seen as a way to ensure sustainable growth without overextending resources.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2024-01-22 -> 2024-06-30
+similarity=0.4492 | shift_score=0.5508 | day_z=-0.4430
+
+Day 1 - article_3_s3 (Article 3, Sentence 3)
+topic_weight=0.266
+    [article_3_s1] Authorities in the European Union and the United States are examining issues related to data usage, algorithmic transparency, and market competition.
+    [article_3_s2] This regulatory push coincides with broader economic uncertainty.
+>>> [article_3_s3] Slower global growth and persistent inflation are affecting consumer electronics demand, forcing Apple to balance innovation with cost management.
+    [article_3_s4] Supply chain disruptions, particularly in energy-intensive manufacturing sectors, continue to pose challenges.
+    [article_3_s5] Climate considerations are becoming more central to policy discussions.
+
+Day 2 - article_4_s8 (Article 4, Sentence 8)
+topic_weight=0.246
+    [article_4_s6] In the health sector, ongoing debates about the reliability of AI-driven insights have led to additional testing and validation requirements.
+    [article_4_s7] Apple is reportedly working closely with experts to address these concerns.
+>>> [article_4_s8] This marks a clear departure from earlier narratives of rapid expansion, reflecting a more restrained and risk-aware approach.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2023-09-18 -> 2024-01-22
+similarity=0.3865 | shift_score=0.6135 | day_z=-0.5304
+
+Day 1 - article_2_s12 (Article 2, Sentence 12)
+topic_weight=0.257
+    [article_2_s10] In healthcare, questions are being raised about the reliability of AI-driven diagnostics in consumer devices.
+    [article_2_s11] Medical professionals emphasize that such tools should complement, not replace, clinical judgment.
+>>> [article_2_s12] The narrative has now shifted toward risk awareness, as Apple navigates growing skepticism around its AI ambitions.
+
+Day 2 - article_3_s3 (Article 3, Sentence 3)
+topic_weight=0.266
+    [article_3_s1] Authorities in the European Union and the United States are examining issues related to data usage, algorithmic transparency, and market competition.
+    [article_3_s2] This regulatory push coincides with broader economic uncertainty.
+>>> [article_3_s3] Slower global growth and persistent inflation are affecting consumer electronics demand, forcing Apple to balance innovation with cost management.
+    [article_3_s4] Supply chain disruptions, particularly in energy-intensive manufacturing sectors, continue to pose challenges.
+    [article_3_s5] Climate considerations are becoming more central to policy discussions.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.

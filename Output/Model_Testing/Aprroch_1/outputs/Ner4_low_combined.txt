@@ -1,0 +1,245 @@
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+
+FILE 3: Ner4_low_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_low_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_low_combined.txt
+====================================================================================================
+
+NARRATIVE SHIFT COUNT BY TOPIC
+----------------------------------------------------------------------------------------------------
+War: 0
+Health: 3
+Economics: 4
+Technology: 5
+Climate: 0
+
+
+====================================================================================================
+FILE 3: Ner4_low_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner4_low_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner4_low_combined.txt
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 3
+####################################################################################################
+
+Shift #1: 2023-05-22 -> 2024-01-28
+similarity=0.6979 | shift_score=0.3021 | day_z=1.7001
+
+Day 1 - article_1_s9 (Article 1, Sentence 9)
+topic_weight=0.207
+>>> [article_1_s9] The overall narrative remains unchanged, reinforcing Apple's consistent positioning around privacy and user-centric design.
+
+Day 2 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.249
+    [article_3_s8] Healthcare applications are evolving gradually, with a focus on improving reliability and user understanding.
+    [article_3_s9] Apple continues to collaborate with experts to ensure responsible deployment.
+>>> [article_3_s10] The narrative remains stable, with consistent emphasis on privacy and incremental improvement.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2024-10-03 -> 2025-01-10
+similarity=0.6309 | shift_score=0.3691 | day_z=-0.2772
+
+Day 1 - article_5_s9 (Article 5, Sentence 9)
+topic_weight=0.231
+    [article_5_s7] Efficiency improvements in AI systems contribute to these efforts.
+    [article_5_s8] Healthcare applications continue to evolve, with a focus on accuracy and user trust.
+>>> [article_5_s9] The narrative remains consistent, reinforcing Apple's established approach.
+
+Day 2 - article_6_s6 (Article 6, Sentence 6)
+topic_weight=0.203
+    [article_6_s5] Apple's steady strategy provides a foundation for continued growth.
+>>> [article_6_s6] Environmental sustainability remains a priority, with ongoing investments in renewable energy and efficient technologies.
+    [article_6_s7] In healthcare, Apple continues to refine its AI-driven tools, ensuring that they remain supportive and reliable.
+    [article_6_s8] The narrative remains unchanged, with only minor contextual adjustments.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2024-01-28 -> 2024-06-12
+similarity=0.6338 | shift_score=0.3662 | day_z=-0.6105
+
+Day 1 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.249
+    [article_3_s8] Healthcare applications are evolving gradually, with a focus on improving reliability and user understanding.
+    [article_3_s9] Apple continues to collaborate with experts to ensure responsible deployment.
+>>> [article_3_s10] The narrative remains stable, with consistent emphasis on privacy and incremental improvement.
+
+Day 2 - article_4_s6 (Article 4, Sentence 6)
+topic_weight=0.200
+>>> [article_4_s6] Environmental considerations continue to influence development, with ongoing efforts to reduce energy consumption and improve sustainability.
+    [article_4_s7] Apple has highlighted progress in its climate initiatives, though challenges remain.
+    [article_4_s8] In healthcare, Apple is refining its AI-driven insights, ensuring that they remain accessible and reliable for users.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 4
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-22
+similarity=0.7226 | shift_score=0.2774 | day_z=1.9764
+
+Day 1 - article_0_s8 (Article 0, Sentence 8)
+topic_weight=0.212
+    [article_0_s6] Inflationary pressures and fluctuating consumer demand have led to cautious spending patterns, particularly in premium electronics.
+    [article_0_s7] Analysts suggest that Apple's focus on practical and privacy-focused features may help sustain steady demand.
+>>> [article_0_s8] Environmental considerations were also emphasized.
+
+Day 2 - article_1_s4 (Article 1, Sentence 4)
+topic_weight=0.204
+    [article_1_s3] Apple's approach remains incremental, prioritizing refinement over large-scale changes.
+>>> [article_1_s4] Economic conditions remain uncertain, with supply chain costs and energy prices continuing to affect global markets.
+    [article_1_s5] Apple's steady strategy may help it navigate these challenges without introducing unnecessary risk.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2023-05-22 -> 2024-01-28
+similarity=0.7825 | shift_score=0.2175 | day_z=-0.2348
+
+Day 1 - article_1_s3 (Article 1, Sentence 3)
+topic_weight=0.209
+>>> [article_1_s3] Apple's approach remains incremental, prioritizing refinement over large-scale changes.
+    [article_1_s4] Economic conditions remain uncertain, with supply chain costs and energy prices continuing to affect global markets.
+    [article_1_s5] Apple's steady strategy may help it navigate these challenges without introducing unnecessary risk.
+
+Day 2 - article_3_s4 (Article 3, Sentence 4)
+topic_weight=0.208
+    [article_3_s3] AI is positioned as a supporting layer rather than a dominant feature.
+>>> [article_3_s4] Economic conditions have shown modest improvement, though uncertainties persist.
+    [article_3_s5] Apple's steady approach allows it to adapt without significant shifts in strategy.
+    [article_3_s6] Climate goals remain an integral part of the company's operations.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2024-01-28 -> 2024-06-12
+similarity=0.7152 | shift_score=0.2848 | day_z=-0.4499
+
+Day 1 - article_3_s3 (Article 3, Sentence 3)
+topic_weight=0.207
+>>> [article_3_s3] AI is positioned as a supporting layer rather than a dominant feature.
+    [article_3_s4] Economic conditions have shown modest improvement, though uncertainties persist.
+    [article_3_s5] Apple's steady approach allows it to adapt without significant shifts in strategy.
+
+Day 2 - article_4_s5 (Article 4, Sentence 5)
+topic_weight=0.206
+    [article_4_s3] Apple's emphasis on on-device processing remains unchanged, reinforcing its commitment to data security.
+    [article_4_s4] Economic conditions have stabilized somewhat, though regional variations persist.
+>>> [article_4_s5] Apple's measured approach appears well-suited to navigating this environment.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2024-10-03 -> 2025-01-10
+similarity=0.7380 | shift_score=0.2620 | day_z=-0.6148
+
+Day 1 - article_5_s3 (Article 5, Sentence 3)
+topic_weight=0.225
+>>> [article_5_s3] This approach continues to differentiate Apple in a competitive landscape.
+    [article_5_s4] Economic conditions remain relatively stable, though uncertainties in supply chains and energy markets persist.
+    [article_5_s6] Climate initiatives are ongoing, with Apple working to reduce the environmental impact of its operations.
+
+Day 2 - article_6_s6 (Article 6, Sentence 6)
+topic_weight=0.206
+    [article_6_s3] Apple's emphasis on consistency reflects its long-term approach to AI development.
+    [article_6_s4] Economic conditions have improved slightly, though global uncertainties remain.
+>>> [article_6_s6] Environmental sustainability remains a priority, with ongoing investments in renewable energy and efficient technologies.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2023-01-15 -> 2023-05-22
+similarity=0.5573 | shift_score=0.4427 | day_z=2.2310
+
+Day 1 - article_0_s13 (Article 0, Sentence 13)
+topic_weight=0.266
+    [article_0_s11] In the healthcare space, Apple continues to expand AI-driven capabilities in its wearable devices, focusing on monitoring physical activity, heart rate, and sleep patterns.
+    [article_0_s12] These features are presented as supportive tools rather than diagnostic systems.
+>>> [article_0_s13] The company's messaging remains consistent: AI should enhance user experience without compromising privacy or control.
+
+Day 2 - article_1_s5 (Article 1, Sentence 5)
+topic_weight=0.238
+    [article_1_s3] Apple's approach remains incremental, prioritizing refinement over large-scale changes.
+    [article_1_s4] Economic conditions remain uncertain, with supply chain costs and energy prices continuing to affect global markets.
+>>> [article_1_s5] Apple's steady strategy may help it navigate these challenges without introducing unnecessary risk.
+    [article_1_s6] Climate considerations are also part of the company's ongoing narrative.
+    [article_1_s7] By optimizing AI efficiency, Apple aims to reduce its environmental footprint, although industry analysts highlight the broader energy demands associated with AI growth.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2023-05-22 -> 2023-09-14
+similarity=0.5148 | shift_score=0.4852 | day_z=-0.3305
+
+Day 1 - article_1_s0 (Article 1, Sentence 0)
+topic_weight=0.273
+>>> [article_1_s0] Apple has reaffirmed its commitment to privacy-first artificial intelligence as it rolls out updates across its product lineup.
+    [article_1_s1] The company continues to emphasize on-device processing, ensuring that user data remains secure and under individual control.
+    [article_1_s2] Recent updates focus on improving the accuracy and responsiveness of existing AI features, including voice assistants and system recommendations.
+
+Day 2 - article_2_s8 (Article 2, Sentence 8)
+topic_weight=0.240
+    [article_2_s6] Environmental sustainability continues to be integrated into product development.
+    [article_2_s7] Apple highlights improvements in energy efficiency, though external experts call for more detailed reporting on AI-related energy usage.
+>>> [article_2_s8] In the health sector, Apple is refining its algorithms to provide more accurate insights while ensuring that users understand the limitations of these tools.
+    [article_2_s9] The company's messaging remains highly consistent, with only minor refinements in emphasis.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2023-09-14 -> 2024-01-28
+similarity=0.5175 | shift_score=0.4825 | day_z=-0.4060
+
+Day 1 - article_2_s8 (Article 2, Sentence 8)
+topic_weight=0.240
+    [article_2_s6] Environmental sustainability continues to be integrated into product development.
+    [article_2_s7] Apple highlights improvements in energy efficiency, though external experts call for more detailed reporting on AI-related energy usage.
+>>> [article_2_s8] In the health sector, Apple is refining its algorithms to provide more accurate insights while ensuring that users understand the limitations of these tools.
+    [article_2_s9] The company's messaging remains highly consistent, with only minor refinements in emphasis.
+
+Day 2 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.243
+    [article_3_s8] Healthcare applications are evolving gradually, with a focus on improving reliability and user understanding.
+    [article_3_s9] Apple continues to collaborate with experts to ensure responsible deployment.
+>>> [article_3_s10] The narrative remains stable, with consistent emphasis on privacy and incremental improvement.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2024-01-28 -> 2024-06-12
+similarity=0.4917 | shift_score=0.5083 | day_z=-0.4537
+
+Day 1 - article_3_s10 (Article 3, Sentence 10)
+topic_weight=0.243
+    [article_3_s8] Healthcare applications are evolving gradually, with a focus on improving reliability and user understanding.
+    [article_3_s9] Apple continues to collaborate with experts to ensure responsible deployment.
+>>> [article_3_s10] The narrative remains stable, with consistent emphasis on privacy and incremental improvement.
+
+Day 2 - article_4_s5 (Article 4, Sentence 5)
+topic_weight=0.234
+    [article_4_s3] Apple's emphasis on on-device processing remains unchanged, reinforcing its commitment to data security.
+    [article_4_s4] Economic conditions have stabilized somewhat, though regional variations persist.
+>>> [article_4_s5] Apple's measured approach appears well-suited to navigating this environment.
+    [article_4_s6] Environmental considerations continue to influence development, with ongoing efforts to reduce energy consumption and improve sustainability.
+    [article_4_s7] Apple has highlighted progress in its climate initiatives, though challenges remain.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2024-10-03 -> 2025-01-10
+similarity=0.4761 | shift_score=0.5239 | day_z=-0.5001
+
+Day 1 - article_5_s3 (Article 5, Sentence 3)
+topic_weight=0.230
+    [article_5_s1] The company's updates are designed to enhance functionality without introducing significant changes.
+    [article_5_s2] On-device processing remains a central feature, ensuring that user data is handled securely.
+>>> [article_5_s3] This approach continues to differentiate Apple in a competitive landscape.
+    [article_5_s4] Economic conditions remain relatively stable, though uncertainties in supply chains and energy markets persist.
+    [article_5_s5] Apple's consistent strategy allows it to adapt without major disruptions.
+
+Day 2 - article_6_s8 (Article 6, Sentence 8)
+topic_weight=0.237
+    [article_6_s6] Environmental sustainability remains a priority, with ongoing investments in renewable energy and efficient technologies.
+    [article_6_s7] In healthcare, Apple continues to refine its AI-driven tools, ensuring that they remain supportive and reliable.
+>>> [article_6_s8] The narrative remains unchanged, with only minor contextual adjustments.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.

@@ -1,0 +1,259 @@
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+
+FILE 1: Ner1_hard_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner1_hard_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner1_hard_combined.txt
+====================================================================================================
+
+NARRATIVE SHIFT COUNT BY TOPIC
+----------------------------------------------------------------------------------------------------
+War: 5
+Health: 0
+Economics: 5
+Technology: 0
+Climate: 3
+
+
+====================================================================================================
+FILE 1: Ner1_hard_combined.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/Ner1_hard_combined.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/Ner1_hard_combined.txt
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2022-02-28 -> 2022-03-12
+similarity=0.2903 | shift_score=0.7097 | day_z=1.5521
+
+Day 1 - article_0_s0 (Article 0, Sentence 0)
+topic_weight=0.258
+>>> [article_0_s0] The United States announced a sweeping package of sanctions targeting Russia’s financial institutions and key political figures, marking one of the strongest responses yet to the invasion of Ukraine.
+    [article_0_s1] Senior officials described the move as a necessary step to weaken Moscow’s ability to sustain military operations, emphasizing that Washington stands firmly with Ukraine’s sovereignty.
+    [article_0_s2] The immediate global reaction has been sharp.
+
+Day 2 - article_1_s8 (Article 1, Sentence 8)
+topic_weight=0.227
+    [article_1_s6] Displacement and overcrowding in refugee camps increase the risk of disease outbreaks, while mental health challenges among affected populations are growing.
+    [article_1_s7] Aid organizations are calling for increased international support.
+>>> [article_1_s8] On the climate front, policymakers face difficult trade-offs.
+    [article_1_s9] While the crisis has renewed interest in energy independence, short-term measures such as increased fossil fuel production could undermine long-term sustainability goals.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2022-06-05 -> 2022-08-20
+similarity=0.4475 | shift_score=0.5525 | day_z=0.7767
+
+Day 1 - article_3_s8 (Article 3, Sentence 8)
+topic_weight=0.240
+    [article_3_s6] Aid groups stress the importance of maintaining humanitarian corridors to deliver assistance.
+    [article_3_s7] Climate considerations are also influencing policy debates.
+>>> [article_3_s8] Efforts to secure alternative energy sources have intensified, but experts caution that short-term solutions may conflict with long-term environmental goals.
+
+Day 2 - article_4_s0 (Article 4, Sentence 0)
+topic_weight=0.246
+>>> [article_4_s0] The United States is beginning to reassess its approach to the conflict as economic and political costs continue to rise.
+    [article_4_s1] While support for Ukraine remains strong, officials are exploring strategies to balance commitments with domestic priorities.
+    [article_4_s2] Energy markets remain volatile, contributing to persistent inflation.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2022-08-20 -> 2022-10-15
+similarity=0.4387 | shift_score=0.5613 | day_z=0.3443
+
+Day 1 - article_4_s3 (Article 4, Sentence 3)
+topic_weight=0.231
+    [article_4_s1] While support for Ukraine remains strong, officials are exploring strategies to balance commitments with domestic priorities.
+    [article_4_s2] Energy markets remain volatile, contributing to persistent inflation.
+>>> [article_4_s3] Governments are under pressure to stabilize prices while ensuring energy security.
+    [article_4_s4] The crisis has also prompted renewed discussions on accelerating the transition to renewable energy sources.
+    [article_4_s5] Humanitarian conditions remain dire, with millions displaced and healthcare systems overwhelmed.
+
+Day 2 - article_5_s0 (Article 5, Sentence 0)
+topic_weight=0.271
+>>> [article_5_s0] U.S.
+    [article_5_s1] officials are increasingly emphasizing the importance of diplomatic solutions, signaling a shift in tone from earlier stages of the conflict.
+    [article_5_s2] While military aid continues, there is growing recognition that a negotiated settlement may be necessary.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2022-10-15 -> 2022-12-22
+similarity=0.3735 | shift_score=0.6265 | day_z=-0.4856
+
+Day 1 - article_5_s5 (Article 5, Sentence 5)
+topic_weight=0.243
+    [article_5_s3] Economic uncertainty remains high, with concerns about global recession and financial instability.
+    [article_5_s4] Energy policies are being reevaluated as governments seek to balance immediate needs with climate commitments.
+>>> [article_5_s5] Public health experts warn that prolonged conflict could lead to lasting impacts on affected populations, including mental health challenges and reduced access to care.
+
+Day 2 - article_6_s0 (Article 6, Sentence 0)
+topic_weight=0.259
+>>> [article_6_s0] The United States is actively encouraging negotiations between Ukraine and Russia, reflecting growing war fatigue and economic pressures.
+    [article_6_s1] Officials stress the importance of finding a sustainable resolution.
+    [article_6_s2] Markets have shown signs of stabilization, but uncertainties persist.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2022-03-12 -> 2022-04-08
+similarity=0.2664 | shift_score=0.7336 | day_z=-0.7471
+
+Day 1 - article_1_s8 (Article 1, Sentence 8)
+topic_weight=0.227
+    [article_1_s6] Displacement and overcrowding in refugee camps increase the risk of disease outbreaks, while mental health challenges among affected populations are growing.
+    [article_1_s7] Aid organizations are calling for increased international support.
+>>> [article_1_s8] On the climate front, policymakers face difficult trade-offs.
+    [article_1_s9] While the crisis has renewed interest in energy independence, short-term measures such as increased fossil fuel production could undermine long-term sustainability goals.
+
+Day 2 - article_2_s0 (Article 2, Sentence 0)
+topic_weight=0.243
+>>> [article_2_s0] U.S.
+    [article_2_s1] leadership has signaled a long-term commitment to supporting Ukraine, framing the conflict as part of a broader effort to defend democratic values.
+    [article_2_s2] Officials emphasized that assistance will continue for as long as necessary.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 5
+####################################################################################################
+
+Shift #1: 2022-06-05 -> 2022-08-20
+similarity=0.5849 | shift_score=0.4151 | day_z=1.1624
+
+Day 1 - article_3_s5 (Article 3, Sentence 5)
+topic_weight=0.210
+    [article_3_s3] Economists warn that prolonged conflict could push several economies toward recession.
+    [article_3_s4] Trade disruptions are also impacting industries reliant on raw materials from the region.
+>>> [article_3_s5] Healthcare challenges persist in war-affected areas, with limited access to essential medicines and services.
+
+Day 2 - article_4_s0 (Article 4, Sentence 0)
+topic_weight=0.226
+>>> [article_4_s0] The United States is beginning to reassess its approach to the conflict as economic and political costs continue to rise.
+    [article_4_s1] While support for Ukraine remains strong, officials are exploring strategies to balance commitments with domestic priorities.
+    [article_4_s2] Energy markets remain volatile, contributing to persistent inflation.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2022-02-28 -> 2022-03-12
+similarity=0.4279 | shift_score=0.5721 | day_z=0.7109
+
+Day 1 - article_0_s0 (Article 0, Sentence 0)
+topic_weight=0.208
+>>> [article_0_s0] The United States announced a sweeping package of sanctions targeting Russia’s financial institutions and key political figures, marking one of the strongest responses yet to the invasion of Ukraine.
+    [article_0_s1] Senior officials described the move as a necessary step to weaken Moscow’s ability to sustain military operations, emphasizing that Washington stands firmly with Ukraine’s sovereignty.
+    [article_0_s2] The immediate global reaction has been sharp.
+
+Day 2 - article_1_s4 (Article 1, Sentence 4)
+topic_weight=0.205
+    [article_1_s2] However, the economic ripple effects are becoming more pronounced.
+    [article_1_s3] Rising fuel and food prices are placing pressure on households worldwide, with economists warning of prolonged inflationary trends.
+>>> [article_1_s4] Supply chain disruptions, particularly in grain exports from Ukraine, are raising concerns about food security in vulnerable regions.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2022-03-12 -> 2022-04-08
+similarity=0.4099 | shift_score=0.5901 | day_z=0.4475
+
+Day 1 - article_1_s4 (Article 1, Sentence 4)
+topic_weight=0.205
+    [article_1_s2] However, the economic ripple effects are becoming more pronounced.
+    [article_1_s3] Rising fuel and food prices are placing pressure on households worldwide, with economists warning of prolonged inflationary trends.
+>>> [article_1_s4] Supply chain disruptions, particularly in grain exports from Ukraine, are raising concerns about food security in vulnerable regions.
+
+Day 2 - article_2_s1 (Article 2, Sentence 1)
+topic_weight=0.204
+>>> [article_2_s1] leadership has signaled a long-term commitment to supporting Ukraine, framing the conflict as part of a broader effort to defend democratic values.
+    [article_2_s2] Officials emphasized that assistance will continue for as long as necessary.
+    [article_2_s3] At the same time, economic concerns are becoming more visible.
+----------------------------------------------------------------------------------------------------
+
+Shift #4: 2022-08-20 -> 2022-10-15
+similarity=0.5527 | shift_score=0.4473 | day_z=0.2376
+
+Day 1 - article_4_s3 (Article 4, Sentence 3)
+topic_weight=0.216
+    [article_4_s1] While support for Ukraine remains strong, officials are exploring strategies to balance commitments with domestic priorities.
+    [article_4_s2] Energy markets remain volatile, contributing to persistent inflation.
+>>> [article_4_s3] Governments are under pressure to stabilize prices while ensuring energy security.
+    [article_4_s4] The crisis has also prompted renewed discussions on accelerating the transition to renewable energy sources.
+
+Day 2 - article_5_s1 (Article 5, Sentence 1)
+topic_weight=0.212
+>>> [article_5_s1] officials are increasingly emphasizing the importance of diplomatic solutions, signaling a shift in tone from earlier stages of the conflict.
+    [article_5_s2] While military aid continues, there is growing recognition that a negotiated settlement may be necessary.
+    [article_5_s3] Economic uncertainty remains high, with concerns about global recession and financial instability.
+----------------------------------------------------------------------------------------------------
+
+Shift #5: 2022-10-15 -> 2022-12-22
+similarity=0.3735 | shift_score=0.6265 | day_z=-0.7251
+
+Day 1 - article_5_s5 (Article 5, Sentence 5)
+topic_weight=0.208
+    [article_5_s3] Economic uncertainty remains high, with concerns about global recession and financial instability.
+    [article_5_s4] Energy policies are being reevaluated as governments seek to balance immediate needs with climate commitments.
+>>> [article_5_s5] Public health experts warn that prolonged conflict could lead to lasting impacts on affected populations, including mental health challenges and reduced access to care.
+
+Day 2 - article_6_s0 (Article 6, Sentence 0)
+topic_weight=0.204
+>>> [article_6_s0] The United States is actively encouraging negotiations between Ukraine and Russia, reflecting growing war fatigue and economic pressures.
+    [article_6_s1] Officials stress the importance of finding a sustainable resolution.
+    [article_6_s3] Climate initiatives are regaining attention as energy systems adapt to new realities.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 3
+####################################################################################################
+
+Shift #1: 2022-02-28 -> 2022-03-12
+similarity=0.5939 | shift_score=0.4061 | day_z=1.3630
+
+Day 1 - article_0_s6 (Article 0, Sentence 6)
+topic_weight=0.204
+>>> [article_0_s6] Hospitals in eastern Ukraine are struggling to cope with casualties, while international health organizations have raised alarms over shortages of medical supplies.
+    [article_0_s7] Refugee flows into neighboring countries are expected to strain public health systems already recovering from the pandemic.
+    [article_0_s8] Climate experts have also weighed in, noting that the crisis could temporarily delay global efforts to transition away from fossil fuels.
+
+Day 2 - article_1_s9 (Article 1, Sentence 9)
+topic_weight=0.251
+    [article_1_s7] Aid organizations are calling for increased international support.
+    [article_1_s8] On the climate front, policymakers face difficult trade-offs.
+>>> [article_1_s9] While the crisis has renewed interest in energy independence, short-term measures such as increased fossil fuel production could undermine long-term sustainability goals.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2022-06-05 -> 2022-08-20
+similarity=0.5137 | shift_score=0.4863 | day_z=0.5483
+
+Day 1 - article_3_s8 (Article 3, Sentence 8)
+topic_weight=0.243
+    [article_3_s6] Aid groups stress the importance of maintaining humanitarian corridors to deliver assistance.
+    [article_3_s7] Climate considerations are also influencing policy debates.
+>>> [article_3_s8] Efforts to secure alternative energy sources have intensified, but experts caution that short-term solutions may conflict with long-term environmental goals.
+
+Day 2 - article_4_s2 (Article 4, Sentence 2)
+topic_weight=0.200
+>>> [article_4_s2] Energy markets remain volatile, contributing to persistent inflation.
+    [article_4_s3] Governments are under pressure to stabilize prices while ensuring energy security.
+    [article_4_s4] The crisis has also prompted renewed discussions on accelerating the transition to renewable energy sources.
+----------------------------------------------------------------------------------------------------
+
+Shift #3: 2022-03-12 -> 2022-04-08
+similarity=0.5855 | shift_score=0.4145 | day_z=-0.8687
+
+Day 1 - article_1_s9 (Article 1, Sentence 9)
+topic_weight=0.251
+    [article_1_s7] Aid organizations are calling for increased international support.
+    [article_1_s8] On the climate front, policymakers face difficult trade-offs.
+>>> [article_1_s9] While the crisis has renewed interest in energy independence, short-term measures such as increased fossil fuel production could undermine long-term sustainability goals.
+
+Day 2 - article_2_s9 (Article 2, Sentence 9)
+topic_weight=0.220
+    [article_2_s7] Healthcare infrastructure in conflict zones is under severe strain, and access to basic services remains limited.
+    [article_2_s8] International agencies warn of long-term health consequences for displaced populations.
+>>> [article_2_s9] Energy experts note that while the crisis poses immediate challenges, it could also accelerate investment in renewable energy.
+    [article_2_s10] Governments are exploring alternatives to reduce dependence on geopolitically unstable energy sources.
+----------------------------------------------------------------------------------------------------

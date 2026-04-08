@@ -259,8 +259,8 @@ New Topic: "AI Regulation" (emerged 2025)
 **Cost Breakdown:**
 ```
 Cloud Computing (AWS/GCP):
-  - GPU hours: 360 hours × $2.50/hour = $900
-  - Storage: 1TB × $0.10/GB/month = $100
+  - GPU hours: 360 hours x $2.50/hour = $900
+  - Storage: 1TB x $0.10/GB/month = $100
   - Data transfer: $50
   Total: ~$1,050 per analysis cycle
 
@@ -328,7 +328,7 @@ Climate Topic:
 - Adaptive re-calibration
 
 **Additional Cost:**
-- Bi-annual re-analysis: $1,000 × 2 = $2,000/year
+- Bi-annual re-analysis: $1,000 x 2 = $2,000/year
 - Ongoing maintenance
 
 ### ⚠️ 5. Complexity
@@ -368,7 +368,7 @@ for topic in topics:
 
 **Lines of Code:**
 - Approach 1-2: ~1,200 lines
-- Approach 3: ~2,500 lines (2× more)
+- Approach 3: ~2,500 lines (2x more)
 
 ---
 
@@ -532,7 +532,7 @@ While theoretically superior, Approach 3 is **not currently feasible** due to:
 1. ⏳ Time requirements (4-5 months)
 2. 💰 Computational costs ($1,000+ per analysis)
 3. 📊 Historical data needs (3 years per topic)
-4. 🔧 Ongoing maintenance (bi-annual re-analysis)
+4.  Ongoing maintenance (bi-annual re-analysis)
 
 **Recommended Path:**
 1. Implement Approaches 1, 2, 4, 5 first

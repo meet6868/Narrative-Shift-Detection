@@ -1,0 +1,79 @@
+USER INFERENCE FINAL OUTPUT
+====================================================================================================
+
+FILE 5: user_article.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/user_article.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/user_article.txt
+====================================================================================================
+
+NARRATIVE SHIFT COUNT BY TOPIC
+----------------------------------------------------------------------------------------------------
+War: 0
+Health: 0
+Economics: 0
+Technology: 2
+Climate: 0
+
+
+====================================================================================================
+FILE 5: user_article.csv
+Input:  /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/user_article.csv
+Output: /home/hp/SEM2/INLP/Naretve_Shift/Output/Model_Testing/Aprroch_1/outputs/user_article.txt
+====================================================================================================
+Topics in result: ['War', 'Health', 'Economics', 'Technology', 'Climate']
+
+####################################################################################################
+TOPIC: War | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Health | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Economics | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
+
+####################################################################################################
+TOPIC: Technology | Total sentence-level shifts: 2
+####################################################################################################
+
+Shift #1: 2024-02-03 -> 2024-02-18
+similarity=0.3272 | shift_score=0.6728 | day_z=1.3985
+
+Day 1 - article_5_s1 (Article 5, Sentence 1)
+topic_weight=0.200
+    [article_5_s0] Healthcare systems around the world are facing rising pressure as chronic diseases such as diabetes and cardiovascular conditions become more common.
+>>> [article_5_s1] Public health experts emphasize the importance of preventive care and healthier lifestyles to reduce long-term medical costs.
+    [article_5_s4] Economists note that healthier populations can significantly boost workforce productivity and economic stability.
+
+Day 2 - article_7_s0 (Article 7, Sentence 0)
+topic_weight=0.285
+>>> [article_7_s0] Recent advances in artificial intelligence have sparked debate about the future of employment.
+    [article_7_s1] Researchers demonstrated new AI models capable of performing complex reasoning tasks, raising concerns about job displacement in sectors such as finance, law, and customer support.
+    [article_7_s2] Labor economists argue that while automation may eliminate some jobs, it could also create new opportunities in emerging industries.
+----------------------------------------------------------------------------------------------------
+
+Shift #2: 2024-01-07 -> 2024-01-25
+similarity=0.4302 | shift_score=0.5698 | day_z=-0.5173
+
+Day 1 - article_1_s0 (Article 1, Sentence 0)
+topic_weight=0.273
+>>> [article_1_s0] Technology companies are rapidly expanding investments in artificial intelligence systems designed to automate industrial tasks.
+    [article_1_s1] Several manufacturing firms announced partnerships with robotics startups to deploy AI-controlled assembly lines capable of producing goods with minimal human intervention.
+    [article_1_s2] Economists believe such automation could significantly increase productivity but may also disrupt labor markets, particularly in sectors dependent on routine manual work.
+
+Day 2 - article_2_s0 (Article 2, Sentence 0)
+topic_weight=0.245
+>>> [article_2_s0] Military officials announced that autonomous surveillance drones have been deployed along several contested borders.
+    [article_2_s1] The new systems rely on machine learning algorithms to detect unusual activity and transmit real-time intelligence to command centers.
+    [article_2_s2] Defense experts argue that such technologies could change the nature of modern warfare by allowing faster strategic decisions on the battlefield.
+----------------------------------------------------------------------------------------------------
+
+####################################################################################################
+TOPIC: Climate | Total sentence-level shifts: 0
+####################################################################################################
+No sentence-level shifts detected. Try lowering topic/zscore thresholds.
